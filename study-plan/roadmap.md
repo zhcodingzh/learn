@@ -1,83 +1,117 @@
-# Eight-Week Roadmap
+# Eight-Week Senior Java Interview Roadmap
 
-## Week 1 — Baseline and concurrency foundation
+Updated: 2026-07-20
 
-- Assess current mastery.
-- Revisit locks, thread safety and task coordination.
-- Build the first English answer set.
-- Complete one mixed mock interview.
+The complete topic inventory is in [High-Frequency Master Plan](high-frequency-master-plan.md). This roadmap determines execution order.
 
-## Week 2 — Java core and collections
+## Continuous work every week
 
-- String immutability and string pool
-- `equals()`, `hashCode()` and object contracts
-- HashMap internals and resizing
-- ArrayList vs LinkedList
+Every week must include:
+
+- one resume/project story;
+- English technical answers;
+- spaced review;
+- at least one coding or SQL exercise;
+- one mixed mock or mini-mock.
+
+## Week 1 — Concurrency and Spring baseline
+
+- Visibility, atomicity and ordering
+- Locks and concurrent collections
+- ThreadPoolExecutor
+- CompletableFuture and three-API aggregation
+- Spring IoC, `@Async`, starters and startup behaviour
+- Closed-book assessment
+
+## Week 2 — Spring core and transactions
+
+- Bean lifecycle and scopes
+- AOP, JDK proxy and CGLIB
+- Self-invocation problems
+- Spring MVC request flow
+- Auto-configuration and conditional annotations
+- `@Transactional` mechanism
+- Propagation, isolation and rollback failure cases
+- Spring testing
+
+## Week 3 — Java core, collections and JVM
+
+- String and immutability
+- `equals()` / `hashCode()`
+- HashMap and ConcurrentHashMap
+- ArrayList, LinkedList and common collections
 - Exceptions, generics and streams
-- Concurrent collections
+- Java Memory Model and happens-before
+- JVM memory areas, class loading and GC
+- Production JVM troubleshooting
 
-## Week 3 — JVM and garbage collection
+## Week 4 — SQL, JPA, Redis and messaging
 
-- Stack, heap and metaspace
-- GC Roots and object reachability
-- Minor, major and full GC
-- Collectors and trade-offs
-- Class loading
-- OOM, memory leaks and troubleshooting
-
-## Week 4 — Spring and transactions
-
-- IoC, DI, AOP and bean lifecycle
-- Spring Boot auto-configuration
-- MVC request flow
-- Transaction propagation and isolation
-- Transaction failure scenarios
-- Spring Security and JWT
-
-## Week 5 — Database, Redis and messaging
-
-- Indexes, execution plans and slow queries
-- ACID, isolation and locks
-- Read/write splitting and sharding
-- Cache penetration, breakdown and avalanche
+- Indexes and execution plans
+- ACID, isolation, MVCC and locks
+- Slow queries and pagination
+- JPA fetching and N+1
+- Connection pools
+- Cache-aside and cache failure modes
+- Cache/database consistency
 - Idempotency and distributed locks
-- Message delivery, retry and duplicate consumption
+- Message delivery, duplicate consumption and outbox
 
-## Week 6 — Microservices and infrastructure
+## Week 5 — REST, security and microservices
 
-- Gateway, service discovery and Feign
+- REST semantics and idempotency
+- API errors, validation and versioning
+- JWT and Spring Security
+- Gateway and service discovery
 - Timeout, retry, circuit breaker and bulkhead
-- Nginx load balancing
-- Docker and Kubernetes
-- Readiness and liveness probes
-- Logging, metrics and tracing
+- Rate limiting
+- Saga and eventual consistency
+- Distributed tracing
 
-## Week 7 — System design and project deep dives
+## Week 6 — System design, Kubernetes and observability
 
-- Payment and order systems
-- External API aggregation
-- High-concurrency APIs
-- Caching and consistency
-- Scalability and failure recovery
-- OTT Pay, insurance and infrastructure project stories
+- Requirement and capacity clarification
+- Payment/order design
+- External-API aggregation design
+- Scaling, sharding and caching
+- Failure recovery and security
+- Kubernetes core objects
+- Readiness/liveness, rolling deployment and rollback
+- Logs, metrics, traces and alerting
 
-## Week 8 — English mock interviews
+## Week 7 — Coding and project deep dives
 
-- Java and Spring mock
-- Database and microservices mock
-- System design mock
-- Project and behavioural mock
-- Repair recurring weaknesses
-- Final 30/90/180-second answer set
+- Arrays, strings and hash maps
+- Two pointers and sliding window
+- Stack, queue, linked list and binary search
+- Tree/graph traversal and heap
+- SQL coding
+- Thread-safe coding
+- OTT Pay and insurance project stories
+- Production-incident STAR stories
+
+## Week 8 — Full English interview simulation
+
+- Java/Spring mock
+- Database/concurrency mock
+- Microservices/system-design mock
+- Project/behavioural mock
+- Repair repeated mistakes
+- Final 30/90/180-second English answer set
+- JD-specific P1/P2 review
 
 ## Weekly rhythm
 
 | Day | Focus |
 |---|---|
-| Monday | New topic + old-topic recall |
-| Tuesday | New topic + coding |
-| Wednesday | English answer practice |
-| Thursday | Mixed follow-up questions |
+| Monday | Due review + new P0 topic |
+| Tuesday | Due review + code/SQL |
+| Wednesday | English answer + new P0 topic |
+| Thursday | Mixed follow-ups + project connection |
 | Friday | Project and behavioural stories |
-| Saturday | 45–60 minute mock interview |
-| Sunday | Mistake review and next-week planning |
+| Saturday | 45–60 minute mock |
+| Sunday | Progress update and next-week queue |
+
+## Scheduling rule
+
+Do not wait for one domain to become perfect before touching another. Learn in focused blocks but use mixed spaced review so earlier material remains retrievable.
