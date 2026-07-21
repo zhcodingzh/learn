@@ -1,41 +1,51 @@
 # Senior Java Developer Interview Preparation
 
-This repository is the single source of truth for my Senior Java Developer interview preparation.
+This repository is the single source of truth for Senior Java Developer interview preparation.
 
-## Goals
+## Start here in every voice session
 
-- Explain high-frequency Java topics from first principles.
-- Answer technical questions in English for 60–180 seconds.
-- Handle follow-up questions and discuss trade-offs.
-- Connect answers to real project experience.
-- Retain knowledge through spaced retrieval practice.
-- Validate understanding with code and mock interviews.
+1. Read [Voice Session Plan](study-plan/voice-session-plan.md).
+2. Read [Progress Tracker](study-plan/progress-tracker.md).
+3. Check [Review Schedule](review/review-schedule.md).
+4. Select an overdue review, then the next P0 topic from the [High-Frequency Master Plan](study-plan/high-frequency-master-plan.md).
+5. Ask one question at a time. Do not ask the learner to choose a topic unless the learner changes the plan.
 
 ## Current focus
 
-**Concurrency and asynchronous programming**
+- **Primary:** Spring Boot / Spring Framework high-frequency questions
+- **Parallel review:** concurrency, thread pools and CompletableFuture
+- **Next:** Spring Bean lifecycle, AOP proxies and transactions
 
-Topics already started:
+## Core resources
 
-- `synchronized` and `volatile`
-- `ReentrantReadWriteLock`
-- `StampedLock`
-- `ConcurrentHashMap`
-- `CountDownLatch`
-- `CompletableFuture`
+- [High-Frequency Master Plan](study-plan/high-frequency-master-plan.md) — authoritative P0/P1/P2 checklist
+- [Progress Tracker](study-plan/progress-tracker.md) — current level and next 20 learning units
+- [Voice Session Plan](study-plan/voice-session-plan.md) — exact oral-training workflow
+- [Eight-Week Roadmap](study-plan/roadmap.md)
+- [Current Weekly Plan](study-plan/weekly-plan.md)
+- [168 High-Frequency Questions](question-bank/high-frequency-index.md)
+- [Concurrency Question Bank](question-bank/concurrency.md)
+- [Review Schedule](review/review-schedule.md)
+- [Mistake Log](review/mistake-log.md)
+- [Topic Template](templates/topic-template.md)
+
+## Existing study notes
+
+- [Concurrency Notes](knowledge/concurrency/README.md)
+- [Concurrency English Answers](english-answers/concurrency.md)
 
 ## Mastery scale
 
 | Level | Evidence |
 |---|---|
 | 0 | Not studied |
-| 1 | Can recognize the answer |
-| 2 | Can explain in Chinese without notes |
-| 3 | Can explain in English for 60–90 seconds |
-| 4 | Can handle follow-ups and compare trade-offs |
-| 5 | Can code, design and connect it to a real project |
+| 1 | Recognizes the term |
+| 2 | Explains the main idea in Chinese without notes |
+| 3 | Gives a correct 60–90 second English answer |
+| 4 | Handles follow-ups and compares trade-offs |
+| 5 | Codes/designs it and connects it to verified project experience |
 
-High-frequency topics should reach Level 4 or 5.
+High-frequency P0 topics should reach Level 4–5.
 
 ## Learning loop
 
@@ -45,20 +55,9 @@ High-frequency topics should reach Level 4 or 5.
 4. Technical correction
 5. English answer
 6. Code or project validation
-7. Spaced review on D1, D3, D7, D14 and D30
-8. Mock interview verification
+7. Spaced review
+8. Mock-interview verification
 
-## Repository map
+## Completion rule
 
-- [Roadmap](study-plan/roadmap.md)
-- [Current weekly plan](study-plan/weekly-plan.md)
-- [Concurrency notes](knowledge/concurrency/README.md)
-- [Concurrency English answers](english-answers/concurrency.md)
-- [Concurrency question bank](question-bank/concurrency.md)
-- [Review schedule](review/review-schedule.md)
-- [Mistake log](review/mistake-log.md)
-- [Topic template](templates/topic-template.md)
-
-## Rule
-
-Do not mark a topic as mastered just because the notes are understandable. It must be recalled without notes and explained under interview-style follow-up questions.
+Understanding a displayed answer is not mastery. A topic is complete only after closed-book recall, English output, follow-up questions and practical verification.
